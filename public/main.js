@@ -1,17 +1,17 @@
-import LayerGroup from "ol/layer/Group";
-import OSM from 'ol/source/OSM.js';
-import VectorImageLayer from 'ol/layer/VectorImage.js';
-import VectorSource from "ol/source/Vector";
-import GeoJSON from 'ol/format/GeoJSON.js';
-import Map from 'ol/Map.js';
-import View from 'ol/View.js'
-import TileLayer from "ol/layer/Tile";
-import XYZ from 'ol/source/XYZ.js';
-import Overlay from 'ol/Overlay.js';
+import LayerGroup from "./ol/layer/Group.js";
+import OSM from './ol/source/OSM.js';
+import VectorImageLayer from './ol/layer/VectorImage.js';
+import VectorSource from "./ol/source/Vector";
+import GeoJSON from './ol/format/GeoJSON.js';
+import Map from './ol/Map.js';
+import View from './ol/View.js'
+import TileLayer from "./ol/layer/Tile";
+import XYZ from './ol/source/XYZ.js';
+import Overlay from './ol/Overlay.js';
 
-import { drawShapesOnMap } from "./buildingStyle";
-import { Building, drawShapesOnMapForBuilding } from "./building";
-import { addNewBuildingToJson } from "./jsonManager";
+import { drawShapesOnMap } from "./buildingStyle.js";
+import { Building, drawShapesOnMapForBuilding } from "./building.js";
+import { addNewBuildingToJson } from "./jsonManager.js";
 
 export let pathOfMap = './data/map2.geojson';
 
