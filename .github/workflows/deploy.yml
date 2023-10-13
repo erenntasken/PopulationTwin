@@ -5,11 +5,10 @@ on:
     branches:
       - deployTest
 
-jobs:
+jobs:    
   build:
     name: Build
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
@@ -34,6 +33,7 @@ jobs:
     name: Deploy
     needs: build
     runs-on: ubuntu-latest
+    environment: nodeDeployTestEnv
     if: github.ref == 'refs/heads/main'
 
     steps:
