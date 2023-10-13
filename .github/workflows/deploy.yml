@@ -28,7 +28,7 @@ jobs:
         with:
           persist-credentials: false
           name: production-files
-          path: ./dist
+          path: .
 
   deploy:
     name: Deploy
