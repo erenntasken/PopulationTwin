@@ -3,7 +3,7 @@ name: Deploy
 on:
   push:
     branches:
-      - main
+      - deployTest
 
 jobs:
   build:
@@ -26,6 +26,7 @@ jobs:
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v3
         with:
+          persist-credentials: false
           name: production-files
           path: ./dist
 
