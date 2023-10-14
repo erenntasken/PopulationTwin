@@ -1,4 +1,4 @@
-import {Fill, Stroke, Style} from './ol/style.js';
+import {Fill, Stroke, Style} from 'ol/style.js';
 
 let buildingList = [
     {
