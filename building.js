@@ -1,7 +1,5 @@
 import {Fill, Stroke, Style} from 'ol/style.js';
 
-
-
 let buildingList = [
     {
         "Type": "Apartment",
