@@ -70,16 +70,16 @@ function createMap(){
       layers: [ standartLayer, humaniterianLayer, roadLayer, aerialLayer]
     });
 
-    const baseLayerElements = document.querySelectorAll('.sidebar > select');
-    for(let baseLayerElement of baseLayerElements){
-      baseLayerElement.addEventListener('change',function(){
+
+    let baseLayerElement = document.getElementById("maps")
+    baseLayerElement.addEventListener('change',function(){
         let baseLayerElementValue = this.value;
-        baseLayerGroup.getLayers().forEach(function(element,index,array){
+        baseLayerGroup.getLayers().forEach(function(element){
           let baseLayerTitle = element.get('title');
           element.setVisible(baseLayerTitle === baseLayerElementValue);
         })
       })
-    }
+    
     map.on('click',function(e){
         console.log(e.coordinate)
     });
