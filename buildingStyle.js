@@ -1,4 +1,4 @@
-import {Style, Fill, Stroke} from "ol/style.js"
+import {Style, Fill, Stroke} from "./ol/style.js"
 let populationRanges = [
     {
         "Risk": 4,
