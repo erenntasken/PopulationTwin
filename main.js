@@ -1,11 +1,11 @@
-import LayerGroup from "ol/layer/Group";
+import LayerGroup from "ol/layer/Group.js";
 import OSM from 'ol/source/OSM.js';
 import VectorImageLayer from 'ol/layer/VectorImage.js';
 import VectorSource from "ol/source/Vector";
 import GeoJSON from 'ol/format/GeoJSON.js';
 import Map from 'ol/Map.js';
 import View from 'ol/View.js'
-import TileLayer from "ol/layer/Tile";
+import TileLayer from "ol/layer/Tile.js";
 import XYZ from 'ol/source/XYZ.js';
 import Overlay from 'ol/Overlay.js';
 
