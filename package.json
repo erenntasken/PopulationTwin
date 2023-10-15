@@ -18,10 +18,10 @@
     },
     "scripts": {
         "start": "vite ",
-        "build": "vite build --outDir ./docs --base ./",
+        "build": "vite build --outDir ./docs",
         "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
         "preview": "vite preview",
         "predeploy": "npm run build",
-        "deploy": "deployTest -d dist --include docs --include ./data --include ./css --include ./js"
+        "deploy": "deployTest -d dist"
     }
 }
