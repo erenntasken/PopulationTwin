@@ -11,9 +11,16 @@ import Overlay from 'ol/Overlay.js';
 
 import { drawShapesOnMap } from "./buildingStyle.js";
 
-const pathOfMap = './data/map2.geojson';
+const pathOfMap = './docs/data/map2.geojson';
 
-fetch(pathOfMap)
+function fetchJSON(url) {
+  return fetch(url)
+    .then(function(response) {
+      return response.json();
+    });
+}
+
+fetchJSON(pathOfMap)
 
 const map = createMap();
 const buildingsGeoJSON = loadGeoJSON(pathOfMap);
