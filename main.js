@@ -13,6 +13,7 @@ import { drawShapesOnMap } from "./buildingStyle";
 
 const pathOfMap = './data/map2.geojson';
 
+
 const map = createMap();
 const buildingsGeoJSON = loadGeoJSON(pathOfMap);
 
