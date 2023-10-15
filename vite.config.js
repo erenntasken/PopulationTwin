@@ -4,6 +4,6 @@ export default defineConfig({
   base: "/PopulationTwin/",
   build: {
     assetsDir: 'assets',
-    outDir: "docs"
+    outDir: "docs",
   },
 });
