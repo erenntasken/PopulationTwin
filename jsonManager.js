@@ -1,4 +1,4 @@
-const path = './data/map3.geojson';
+const path = './docs/data/map3.geojson';
 
 function addNewBuildingToJson(newBuilding, coordinatesList){
     fetch(path)
