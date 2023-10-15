@@ -9,10 +9,11 @@ import TileLayer from "ol/layer/Tile.js";
 import XYZ from 'ol/source/XYZ.js';
 import Overlay from 'ol/Overlay.js';
 
-import { drawShapesOnMap } from "./buildingStyle";
+import { drawShapesOnMap } from "./buildingStyle.js";
 
 const pathOfMap = './data/map2.geojson';
 
+fetch(pathOfMap)
 
 const map = createMap();
 const buildingsGeoJSON = loadGeoJSON(pathOfMap);
